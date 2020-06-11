@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Corona App</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="h1 logo">
+      <img class="logo__img" src="/img/logo.png" alt="logo">
+      <div class="text">Corona App <span class="logo__span">for Chrome</span></div>
+    </h1>
+    <div class="preloader"></div>
+  </div>
+  <div class="container--full-screen">
+    <div class="textarea">
+      <div class="global">
+        <div class="container">
+          <div class="global__stat"></div>
+        </div>
+      </div>
+      <div class="container input__container">
+        <input list="input-field" id="input__loc" type="text" class="needed__location">
+        <label for="input__loc" class="input__label">Enter the country</label>
+        <datalist id="input-field" class="datalist">
+        </datalist>
+        <div class="btn__container">
+          <button class="button checkloc__btn">
+            <div class="button__value">Check</div>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="result"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
